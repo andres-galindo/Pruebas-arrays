@@ -12,7 +12,7 @@ bcrear.forEach((crear, i)=>{
     bcrear[i].addEventListener("click", ()=>{
         modal.classList.toggle("activo");
         indice = i;
-        moda.style.background = "red";
+        items[i].style.background = "red";
     })
 });
 bregistro.addEventListener("click", ()=>{
@@ -24,11 +24,11 @@ bregistro.addEventListener("click", ()=>{
 bliberar.forEach((liberar, i)=>{
     bliberar[i].addEventListener("click", ()=>{
         nombre[i].innerText = "";
-        moda.style.background = "wheat";
+        items[i].style.background = "wheat";
     })
 });
 
 bcancelar.addEventListener("click", ()=>{
     modal.classList.toggle("activo");
-    moda.style.background = "wheat";
+    items[indice].style.background = "wheat";
 })
