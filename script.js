@@ -12,7 +12,7 @@ bcrear.forEach((crear, i)=>{
     bcrear[i].addEventListener("click", ()=>{
         modal.classList.toggle("activo");
         indice = i;
-        items[i].style.background = "red";
+        items.style.background = "red";
     })
 });
 bregistro.addEventListener("click", ()=>{
